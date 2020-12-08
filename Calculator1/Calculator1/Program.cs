@@ -16,8 +16,8 @@ namespace Calculator1
             calculator.Minimum(9986, 3825);
             calculator.Maximum(1025, 469);
             calculator.Comparison(25, 65);
-            calculator.Square(28);
-            calculator.findModulo(9, 5);
+            calculator.RootSquare(28);
+            calculator.FindModulo(9, 5);
 
         }
         public class Calculator
@@ -90,13 +90,13 @@ namespace Calculator1
                     return !number3;
                 }
             }
-            public double Square(double number)
+            public double RootSquare(double number)
             {
                 double sqrt = Math.Sqrt(number);
-                Console.WriteLine($"The square of the number {number} is equals to: {sqrt}");
+                Console.WriteLine($"The root square of the number {number} is equals to: {sqrt}");
                 return sqrt;
             }
-            public int findModulo(int number1, int number2)
+            public int FindModulo(int number1, int number2)
             {
                 int modResult = number1 % number2;
                 Console.WriteLine($"The modulo of the division between number {number1} and {number2} is {modResult}");
